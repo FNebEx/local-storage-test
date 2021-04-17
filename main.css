@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header, main, footer {
+  flex-shrink: 0;
+}
+
+header {
+  width: auto;
+  height: 30%;
+  background-color: #2F52E0;
+}
+
+.container {
+  width: 40%;
+  min-height: 3px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+main {
+  min-height: 100%;
+}
+
+/* form */
+
+.tweet-form {
+  display: flex;
+  padding: 25px 20px;
+}
+
+.tweet-form form {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.tweet-form form textarea {
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  border-bottom: 1px solid #2F52E0;
+}
+
+.tweet-form form button {
+  min-width: 100px;
+  height: 35px;
+  background-color: #2F52E0;
+  color: #c1cbf6;
+  border: none;
+  border-radius: 15px;
+}
+
+/* tweet */
+.tweet {
+  border: 1px solid black;
+  padding: 20px 20px 20px 90px;
+}
+
+.user,
+.tweet-text {
+  margin-bottom: 10px;
+}
+
+.user .usernamne {
+  padding-bottom: 5px;
+}
+
+.tweet-text {
+  line-height: 1.5em;
+}
+
+.muted {
+  color: #a5a3a3;
+}
